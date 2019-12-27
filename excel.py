@@ -7,6 +7,9 @@ from xlrd import xldate_as_tuple
 
 class Excel:
 
+    def __init__(self):
+        pass
+    
     def open_csv(self, file_path):
         data_list = []
         data = open(file_path, 'r', encoding="utf-8")
