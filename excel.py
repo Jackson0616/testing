@@ -61,7 +61,9 @@ class Excel:
     def run(self):
         file_path=r"C:/Users/Administrator/Desktop/蜘蛛智联大数据产品1.5/aibuddy20191225.csv"
         aibuddy_list=self.open_csv(file_path)
-        print(len(aibuddy_list))
+        # print(len(aibuddy_list))
+        file_path_1="C:/Users/Administrator/Desktop/蜘蛛智联大数据产品1.5/aibuddy20191225_1.xls"
+        self.save_xls(aibuddy_list,file_path_1)
 
 if __name__ == '__main__':
     excel=Excel()
